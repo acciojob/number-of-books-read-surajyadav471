@@ -18,6 +18,11 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
+	 let sum=0;
+	library.forEach((a) =>{
+		if(a.readingStatus===true) sum++;
+	})
+	return sum;
 };
 
 // Do not change the code below
